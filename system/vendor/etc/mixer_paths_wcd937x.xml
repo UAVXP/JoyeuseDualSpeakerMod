@@ -2736,11 +2736,9 @@
         <ctl name="RX_CDC_DMA_RX_0 Channels" value="Two" />
         <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
-<!--
         <ctl name="EAR_RDAC Switch" value="1" />
         <ctl name="RDAC3_MUX" value="RX1" />
         <ctl name="RX_EAR Mode" value="ON" />
--->
 
         <ctl name="EAR PA Gain" value="G_DEFAULT" />
         <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
@@ -2750,7 +2748,6 @@
     <!-- UAVXP -->
 
     <path name="speaker">
-        <path name="earpiece" />
         <ctl name="WSA_CDC_DMA_RX_0 Channels" value="Two" />
         <ctl name="WSA RX0 MUX" value="AIF1_PB" />
         <ctl name="WSA RX1 MUX" value="AIF1_PB" />
