@@ -1,7 +1,7 @@
 id=uavxp.joyeusedualspeaker
 name=Dual Speaker Mod
-version=v0.2
-versionCode=2
+version=v0.3
+versionCode=3
 author=Zackptg5, Dante63, UAVXP
 description=Dual speaker mod for Redmi Note 9 Pro Global (joyeuse)
 updateJson=https://raw.githubusercontent.com/UAVXP/JoyeuseDualSpeakerMod/master/update.json
