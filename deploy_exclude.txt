@@ -1,0 +1,6 @@
+.git
+.gitattributes
+.gitignore
+deploy.bat
+deploy_exclude.txt
+JoyeuseDualSpeakerMod.zip
