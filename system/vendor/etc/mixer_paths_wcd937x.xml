@@ -329,10 +329,10 @@
     <ctl name="SpkrRight SWR DAC_Port Switch" value="0" />
 
     <!-- RX Controls -->
-    <ctl name="RX_MACRO RX0 MUX" value="ZERO" />
+    <ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
     <ctl name="RX_MACRO RX1 MUX" value="ZERO" />
     <ctl name="RX_CDC_DMA_RX_0 Channels" value="One" />
-    <ctl name="RX INT0_1 MIX1 INP0" value="ZERO" />
+    <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
     <ctl name="RX INT0_1 MIX1 INP1" value="ZERO" />
     <ctl name="RX INT0_1 MIX1 INP2" value="ZERO" />
     <ctl name="RX INT1_1 MIX1 INP0" value="ZERO" />
@@ -543,6 +543,7 @@
 
     <path name="deep-buffer-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback speaker-protected">
@@ -665,6 +666,7 @@
 
     <path name="low-latency-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia5" value="1" />
     </path>
 
     <path name="low-latency-playback handset">
@@ -791,6 +793,7 @@
 
     <path name="audio-ull-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia8" value="1" />
+        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia8" value="1" />
     </path>
 
     <path name="audio-ull-playback speaker-protected">
@@ -915,6 +918,7 @@
 
     <path name="compress-offload-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback speaker-protected">
@@ -2726,7 +2730,26 @@
         <ctl name="TX DMIC MUX2" value="DMIC5" />
     </path>
 
+    <!-- UAVXP -->
+    <path name="earpiece">
+        <ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
+        <ctl name="RX_CDC_DMA_RX_0 Channels" value="Two" />
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
+        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="EAR_RDAC Switch" value="1" />
+        <ctl name="RDAC3_MUX" value="RX1" />
+        <ctl name="RX_EAR Mode" value="ON" />
+
+        <ctl name="EAR PA Gain" value="G_DEFAULT" />
+        <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
+        <ctl name="WSA_RX0 Digital Volume" value="120" />
+        <ctl name="RX_RX0 Digital Volume" value="120" />
+    </path>
+    <!-- UAVXP -->
+
     <path name="speaker">
+        <path name="earpiece" />
+<!--
         <ctl name="WSA_CDC_DMA_RX_0 Channels" value="Two" />
         <ctl name="WSA RX0 MUX" value="AIF1_PB" />
         <ctl name="WSA RX1 MUX" value="AIF1_PB" />
@@ -2742,6 +2765,7 @@
         <ctl name="SpkrRight BOOST Switch" value="1" />
         <ctl name="SpkrRight VISENSE Switch" value="1" />
         <ctl name="SpkrRight SWR DAC_Port Switch" value="1" />
+-->
     </path>
 
     <path name="speaker-mono">
