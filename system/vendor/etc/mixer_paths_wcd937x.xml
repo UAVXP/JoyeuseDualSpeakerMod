@@ -544,6 +544,7 @@
     <path name="deep-buffer-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia1" value="1" />
+        <ctl name="WSA_CDC_DMA_RX_0 Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback speaker-protected">
@@ -667,6 +668,7 @@
     <path name="low-latency-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia5" value="1" />
+        <ctl name="WSA_CDC_DMA_RX_0 Audio Mixer MultiMedia5" value="1" />
     </path>
 
     <path name="low-latency-playback handset">
@@ -793,7 +795,6 @@
 
     <path name="audio-ull-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia8" value="1" />
-        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia8" value="1" />
     </path>
 
     <path name="audio-ull-playback speaker-protected">
@@ -919,6 +920,7 @@
     <path name="compress-offload-playback">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia4" value="1" />
+        <ctl name="WSA_CDC_DMA_RX_0 Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback speaker-protected">
@@ -2740,7 +2742,6 @@
         <ctl name="RDAC3_MUX" value="RX1" />
         <ctl name="RX_EAR Mode" value="ON" />
 
-        <ctl name="EAR PA Gain" value="G_DEFAULT" />
         <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
         <ctl name="WSA_RX0 Digital Volume" value="120" />
         <ctl name="RX_RX0 Digital Volume" value="120" />
@@ -2789,19 +2790,23 @@
 
 
     <path name="speaker-hdk">
-        <path name="speaker" />
+        <path name="speaker-mono" />
+        <path name="earpiece" />
     </path>
 
     <path name="speaker-fluid">
-        <path name="speaker" />
+        <path name="speaker-mono" />
+        <path name="earpiece" />
     </path>
 
     <path name="speaker-liquid">
         <path name="speaker" />
+        <path name="earpiece" />
     </path>
 
     <path name="speaker-safe">
-        <path name="speaker" />
+        <path name="speaker-mono" />
+        <path name="earpiece" />
     </path>
 
    <path name="sidetone-iir">
@@ -2848,6 +2853,7 @@
         <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="1" />
         <ctl name="WSA_CDC_DMA_0 TX Format" value="PACKED_16B" />
         <path name="speaker" />
+        <path name="earpiece" />
         <ctl name="VI_FEED_TX Channels" value="Two" />
         <ctl name="WSA_RX_0_VI_FB_LCH_MUX" value="WSA_CDC_DMA_TX_0" />
         <ctl name="WSA_RX_0_VI_FB_RCH_MUX" value="WSA_CDC_DMA_TX_0" />
@@ -2857,6 +2863,7 @@
         <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="1" />
         <ctl name="WSA_CDC_DMA_0 TX Format" value="PACKED_16B" />
         <path name="speaker-mono" />
+        <path name="earpiece" />
         <ctl name="VI_FEED_TX Channels" value="One" />
         <ctl name="WSA_RX_0_VI_FB_LCH_MUX" value="WSA_CDC_DMA_TX_0" />
     </path>
@@ -2865,6 +2872,7 @@
         <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="1" />
         <ctl name="WSA_CDC_DMA_0 TX Format" value="PACKED_16B" />
         <path name="speaker-mono-2" />
+        <path name="earpiece" />
         <ctl name="VI_FEED_TX Channels" value="One" />
         <ctl name="WSA_RX_0_VI_FB_RCH_MUX" value="WSA_CDC_DMA_TX_0" />
     </path>
@@ -2976,34 +2984,42 @@
     </path>
     <path name="voice-speaker">
         <path name="speaker-mono" />
+        <path name="earpiece" />
     </path>
 
     <path name="voice-speaker-stereo">
         <path name="speaker" />
+        <path name="earpiece" />
     </path>
 
     <path name="voice-speaker-2">
         <path name="speaker-mono-2" />
+        <path name="earpiece" />
     </path>
 
     <path name="voice-speaker-hdk">
         <path name="speaker-mono" />
+        <path name="earpiece" />
     </path>
 
     <path name="voice-speaker-fluid">
         <path name="speaker-fluid" />
+        <path name="earpiece" />
     </path>
 
     <path name="voice-speaker-vbat">
         <path name="speaker-vbat-mono" />
+        <path name="earpiece" />
     </path>
 
     <path name="voice-speaker-2-vbat">
         <path name="speaker-vbat-mono-2" />
+        <path name="earpiece" />
     </path>
 
     <path name="voice-speaker-mic">
         <path name="speaker-mic" />
+        <path name="earpiece" />
     </path>
 
     <path name="voice-headphones">
