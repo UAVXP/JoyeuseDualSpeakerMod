@@ -2750,8 +2750,6 @@
     <!-- UAVXP -->
 
     <path name="speaker">
-        <path name="earpiece" />
-<!--
         <ctl name="WSA_CDC_DMA_RX_0 Channels" value="Two" />
         <ctl name="WSA RX0 MUX" value="AIF1_PB" />
         <ctl name="WSA RX1 MUX" value="AIF1_PB" />
@@ -2767,7 +2765,6 @@
         <ctl name="SpkrRight BOOST Switch" value="1" />
         <ctl name="SpkrRight VISENSE Switch" value="1" />
         <ctl name="SpkrRight SWR DAC_Port Switch" value="1" />
--->
     </path>
 
     <path name="speaker-mono">
@@ -2794,11 +2791,11 @@
 
 
     <path name="speaker-hdk">
-        <path name="speaker-mono" />
+        <path name="speaker" />
     </path>
 
     <path name="speaker-fluid">
-        <path name="speaker-mono" />
+        <path name="speaker" />
     </path>
 
     <path name="speaker-liquid">
@@ -2806,7 +2803,7 @@
     </path>
 
     <path name="speaker-safe">
-        <path name="speaker-mono" />
+        <path name="speaker" />
     </path>
 
    <path name="sidetone-iir">
