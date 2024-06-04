@@ -1,6 +1,6 @@
 {
-  "version": "v3.6",
-  "versionCode": 18,
-  "zipUrl": "https://raw.githubusercontent.com/Zackptg5/MMT-Extended/install.zip",
-  "changelog": "https://raw.githubusercontent.com/Zackptg5/MMT-Extended/changelog.md"
+  "version": "v0.1",
+  "versionCode": 1,
+  "zipUrl": "https://github.com/UAVXP/JoyeuseDualSpeakerMod/archive/refs/heads/master.zip",
+  "changelog": "https://raw.githubusercontent.com/UAVXP/JoyeuseDualSpeakerMod/master/changelog.md"
 }
